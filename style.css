@@ -1,17 +1,22 @@
 
+/* Stellt eine Schriftart zur Verfügung */
 @font-face {
     font-family: 'SeoulHangang CBL';
     font-weight: 400;
     font-style: normal;
-    src: url(./assets/fonts/seoulhangangcondensed/SeoulHangangCondensed-Medium.ttf);
+    src: url(./assets/fonts/seoulhangang-cbl/SeoulHangang_CBL_Regular.ttf);
 }
 
 body{
     font-family: 'SeoulHangang CBL';
+    /* height wird nur benutzt, um die höhe zu fälschen */
     height: 200vh;
 }
+h2,h3{
+    font-weight: 400;
+}
+/* Container Pop Up*/
 
-/**/
 .popup{
     width: 820px;
     height: 674px;
@@ -22,6 +27,8 @@ body{
     top: 50%;
     transform: translate(-50%, -50%);
 }
+
+
 .left-img {
     width: 50%;
     height: 100%;
@@ -29,14 +36,17 @@ body{
     background-position: center;
     background-size: cover;
 }
+
 .popup div{
     width: 50%;
     float: left;
 }
+
 .popup div:last-of-type{
     text-align: center;
     margin-top: 6rem;
 }
+
 .popup div:last-of-type img{
     width: 205px;
 }
@@ -53,11 +63,13 @@ body{
 .popup div:last-of-type h3{
     font-size: 2em;
 }
+
 .popup div:last-of-type button{
     font-size: 1.6em;
     font-family: 'SeoulHangang CBL';
     background-color: black;
 }
+
 .popup div:last-of-type a{
     display: inline-block;
     text-decoration: none;
@@ -70,6 +82,10 @@ body{
     right: 0;
     top: 0;
     background-color: unset;
-    font-size: 2rem;
     border: none;
+    padding: .7rem;
+    cursor: pointer;
+}
+.popup .close-btn img{
+    width: 24px;
 }
